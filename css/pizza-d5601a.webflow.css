@@ -1,0 +1,98 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.body {
+  height: 100svh;
+  max-height: 100svh;
+  background-color: #ffd900;
+  margin: 0;
+  padding: 20px;
+}
+
+.navbar {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: row;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  display: flex;
+}
+
+.pizza-on-sol {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Changa One, Impact, sans-serif;
+}
+
+.links-nav {
+  color: #333;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Changa One, Impact, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.main-content {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.footer {
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.text-block {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Changa One, Impact, sans-serif;
+  font-size: 30px;
+}
+
+.image {
+  width: 20%;
+}
+
+@media screen and (max-width: 479px) {
+  .body {
+    padding: 10px;
+  }
+
+  .pizza-on-sol {
+    font-size: 20px;
+  }
+
+  .navbar-links {
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+  }
+
+  .links-nav {
+    display: inline;
+  }
+
+  .text-block {
+    font-size: 20px;
+  }
+
+  .image {
+    width: 150px;
+  }
+}
